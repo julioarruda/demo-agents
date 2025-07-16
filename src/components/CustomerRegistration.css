@@ -1,0 +1,184 @@
+.customer-registration {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.customer-registration h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.registration-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input.error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.error-message {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(149, 165, 166, 0.3);
+}
+
+.success-message {
+  text-align: center;
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h2 {
+  color: #27ae60;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.customer-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.customer-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.customer-details strong {
+  color: #34495e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .customer-registration {
+    padding: 1rem;
+  }
+  
+  .registration-form {
+    padding: 1.5rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .customer-registration h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Loading and animation effects */
+.form-group input:disabled {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Form validation styling */
+.form-group input:valid {
+  border-color: #28a745;
+}
+
+.form-group input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #dc3545;
+}
